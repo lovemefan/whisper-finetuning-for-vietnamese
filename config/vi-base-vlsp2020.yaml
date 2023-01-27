@@ -1,0 +1,20 @@
+learning_rate : 1.0e-5
+weight_decay : 0.01
+adam_epsilon : 1.0e-8
+warmup_steps : 2
+batch_size : 8
+num_worker : 2
+num_train_epochs : 100
+gradient_accumulation_steps : 1
+log_output_dir : "exp/vlsp2020/logs"
+check_output_dir : "exp/vlsp2020/artifacts"
+train_name : "whisper"
+train_id : "vlsp2020"
+train_dataset: "vlsp2020"
+test_dataset: "vlsp2020"
+model_name : "base"
+manifest_path: "/data_disk/zlf/datasets/manifests/vlsp2020"
+sample_rate : 16000
+lang : "vi"
+checkpoint_path : ""  # using origin model if this parh is invaild
+resume_from_checkpoint: ""
